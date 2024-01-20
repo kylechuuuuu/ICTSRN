@@ -193,10 +193,3 @@ class ict(nn.Module):
 		out = self.add_mean(tail_x)
 
 		return out
-
-
-
-model = ict()
-inn = torch.randn(1, 3, 64, 64)
-out = model(inn)
-print(out.shape)
