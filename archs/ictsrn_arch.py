@@ -163,10 +163,10 @@ class CTBlock(nn.Module):
 # --------------------------------------------------------------------------
 # Architecture
 @ARCH_REGISTRY.register()
-class ict(nn.Module):
+class ictsrn(nn.Module):
 	def __init__(self, upscale, img_channel=3, channel=64, num_in_ch=3, num_out_ch=3, task="lsr"):
 
-		super(ict, self).__init__()
+		super(ictsrn, self).__init__()
 
 		self.upscale =  upscale
 
